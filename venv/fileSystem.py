@@ -28,4 +28,4 @@ def files_bs():
 
 
 my_list = get_input()
-write_out(my_list)
+write_out(my_list)u
