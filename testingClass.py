@@ -54,27 +54,31 @@ class Car:
         return "YR: " + str(self._year) + " NME: " + self._car_name + " MKE: " + self._brand
 
 
-corolla = Car("Toyota", "sedan", "Corolla", 2019)
 camry = Car("Toyota", "sedan", "Camry", 2019)
 Rav4 = Car("Toyota", "sedan", "RAV4", 2019)
-
-Toyota = []
-Toyota.append(corolla)
-Toyota.append(camry)
-Toyota.append(Rav4)
-for x in Toyota:
-    print(x.to_string())
+corolla = Car("Toyota", "sedan", "Corolla", 2019)
+print(Car.to_string(corolla))
+print(corolla.to_string(camry))
 
 
-
-
-John = Person()
-print(John.get_age())
-John.set_age(10)
-John.set_gender("male")
-John.set_occupation("therapist")
-print(John.get_age())
-print(John.say_hello())
+#
+# Toyota = []
+# Toyota.append(corolla)
+# Toyota.append(camry)
+# Toyota.append(Rav4)
+# for x in Toyota:
+#     print(x.to_string())
+#
+#
+#
+#
+# John = Person()
+# print(John.get_age())
+# John.set_age(10)
+# John.set_gender("male")
+# John.set_occupation("therapist")
+# print(John.get_age())
+# print(John.say_hello())
 
 
 
